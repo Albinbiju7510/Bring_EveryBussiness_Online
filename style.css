@@ -1,0 +1,97 @@
+body {
+  font-family: "Raleway", sans-serif !important;
+  background-color: rgb(57, 244, 191);
+  background-image: linear-gradient(0deg, #3cc1a9 0%, #e1fffe 100%);
+}
+
+ul {
+  list-style-type: circle;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1 {
+  color: #ed0a0a;
+  font-weight: bold;
+}
+ 
+p {
+  font-size: 20px;
+  color: #484848;
+}
+
+.section {
+  text-align: center;
+}
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box; 
+} 
+
+.carousel {
+    transition-duration: 1s;
+  }
+.container-fluid{
+  background: url(bg.jpg);
+background-size: cover;
+}
+
+.col-sm-6.p-5{
+  height: 500px; 
+  background: #ffffff;
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+   padding-left: 50px;
+
+}
+.footer {
+  background-color: #030303;
+  height: 100px;
+  padding-top: 10px;
+}
+.carousel-inner{
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+   padding-left: 50px;
+
+}
+.col-sm-6{
+  height: 500px;
+   background:url(bg.jpg); 
+   display: flex; 
+   align-items: center; 
+   justify-content: center;
+
+}
+.social-links a {
+  color: white;
+  padding: 0px 5px 0px 5px;
+}
+
+.social-links a:hover {
+  color: #cf0707;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.footer {
+  background-color: #030303;
+  height: 100px;
+  padding-top: 10px;
+ 
+}
+
+.footer p {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
