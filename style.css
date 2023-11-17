@@ -39,6 +39,7 @@ box-sizing: border-box;
 .container-fluid{
   background: url(bg.jpg);
 background-size: cover;
+  postion: absolute;
 }
 
 .col-sm-6.p-5{
