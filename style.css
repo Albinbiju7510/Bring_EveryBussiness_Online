@@ -1,98 +1,147 @@
 body {
-  font-family: "Raleway", sans-serif !important;
-  background-color: rgb(57, 244, 191);
-  background-image: linear-gradient(0deg, #3cc1a9 0%, #e1fffe 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: rgb(36, 218, 231), 17, 17;
+    background: url(bg.jpg);
+    background-size: cover;
 }
 
-ul {
-  list-style-type: circle;
+header {
+    background: url(bg.jpg);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 3em;
+    animation: fadeInDown 1s ease-out;
 }
 
-a {
-  text-decoration: none !important;
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
 }
 
-h1 {
-  color: #ed0a0a;
-  font-weight: bold;
-}
- 
-p {
-  font-size: 20px;
-  color: #484848;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0 1em;
 }
 
-.section {
-  text-align: center;
+section {
+    padding: 1em;
+    animation: fadeIn 1s ease-out;
 }
 
-
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box; 
-} 
-
-.carousel {
-    transition-duration: 1s;
-  }
-.container-fluid{
-  background: url(bg.jpg);
-background-size: cover;
-  postion: absolute;
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
 }
 
-.col-sm-6.p-5{
-  height: 500px; 
-  background: #ffffff;
-   display: flex; 
-   align-items: center;
-   justify-content: center;
-   padding-left: 50px;
-
-}
-.footer {
-  background-color: #030303;
-  height: 100px;
-  padding-top: 10px;
-}
-.carousel-inner{
-   display: flex; 
-   align-items: center;
-   justify-content: center;
-   padding-left: 50px;
-
-}
-.col-sm-6{
-  height: 500px;
-   background:url(bg.jpg); 
-   display: flex; 
-   align-items: center; 
-   justify-content: center;
-
-}
-.social-links a {
-  color: white;
-  padding: 0px 5px 0px 5px;
+.mySlides {
+display:none;
+    animation: slideIn 1s ease-out;
 }
 
-.social-links a:hover {
-  color: #cf0707;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.footer {
-  background-color: #030303;
-  height: 100px;
-  padding-top: 10px;
- 
+img.slide-img {
+    width: 100%;
+    border-radius: 8px;
 }
 
-.footer p {
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
+footer {
+    background-color: rgb(39, 218, 215) 218, 27;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: fadeInUp 1s ease-out;
+}
+
+.social-icons {
+    margin-top: 10px;
+    opacity: 0; 
+    transition: opacity 1s ease-out;
+}
+.social-icons.show {
+    opacity: 1; /* Show the icons when the 'show' class is added */
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+#home{
+text-decoration:wavy ;
+}
+img{
+border-radius: 50%;
+box-sizing: border-box;
+padding: 20px;
+}
+#products{
+    height: max-content;
+    width: max-content;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+color:rgb(29, 7, 50);
+}
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+font-style:calc();
+    color: rgb(33, 234, 33);
+    
 }
